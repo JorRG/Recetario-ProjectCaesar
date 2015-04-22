@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="556.0" prefWidth="896.0" style="-fx-background-color: antiquewhite;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.NewRecipeController">
+   <children>
+      <Text layoutX="41.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo de preparación" textAlignment="CENTER" wrappingWidth="139.875244140625" GridPane.rowIndex="6" />
+      <Label layoutX="41.0" layoutY="339.0" prefHeight="16.0" prefWidth="169.0" text="Tiempo de cocción" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Text layoutX="41.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del plato" GridPane.rowIndex="1" />
+      <VBox layoutX="613.0" layoutY="90.0" spacing="10.0">
+         <children>
+            <ChoiceBox fx:id="choicedificultad" layoutX="614.0" layoutY="90.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ChoiceBox fx:id="choicevaloracion" layoutX="613.0" layoutY="133.0" prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <ChoiceBox fx:id="choicecomensales" layoutX="614.0" layoutY="183.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="choicecategoria" layoutX="632.0" layoutY="243.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="29.0" layoutY="497.0" spacing="20.0" GridPane.columnSpan="2" GridPane.rowIndex="7">
+         <children>
+            <Button fx:id="butguardar" mnemonicParsing="false" prefHeight="39.0" prefWidth="67.0" style="-fx-background-color: darkseagreen;" text="Guardar" GridPane.rowIndex="7" />
+            <Button fx:id="butcancelar" mnemonicParsing="false" prefHeight="41.0" prefWidth="71.0" style="-fx-background-color: coral;" text="Cancelar" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+         <GridPane.margin>
+            <Insets bottom="10.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </HBox>
+      <VBox layoutX="194.0" layoutY="262.0" spacing="10.0">
+         <children>
+            <TextField fx:id="nomPlato" layoutX="194.0" layoutY="262.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tprep" layoutX="197.0" layoutY="295.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tcoc" layoutX="198.0" layoutY="331.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+         </children>
+      </VBox>
+      <VBox layoutX="449.0" layoutY="95.0" spacing="20.0">
+         <children>
+            <Label layoutX="449.0" layoutY="95.0" prefHeight="16.0" prefWidth="170.0" text="     Dificultad" GridPane.rowIndex="5" />
+            <Label layoutX="470.0" layoutY="139.0" prefHeight="16.0" prefWidth="145.0" text="     Valoración" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label contentDisplay="CENTER" layoutX="459.0" layoutY="186.0" prefHeight="16.0" prefWidth="119.0" text="     Comensales" GridPane.rowIndex="4" />
+            <Label layoutX="473.0" layoutY="240.0" prefHeight="16.0" prefWidth="170.0" text="     Categoria" GridPane.rowIndex="3" />
+         </children>
+      </VBox>
+      <HBox layoutX="41.0" layoutY="49.0">
+         <children>
+            <ImageView fx:id="imagen" fitHeight="150.0" fitWidth="233.0" layoutX="41.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Vacation_travel-08-512.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="addimagebut" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="191.0" layoutY="49.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="114.0" text="Añadir Archivo" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <HBox.margin>
+                  <Insets left="10.0" top="120.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutY="26.0" prefHeight="23.0" prefWidth="896.0" text="Introduzca los datos de la nueva receta" GridPane.columnSpan="6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text fx:id="directorio" layoutX="46.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="391.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="-25.0" />
+         </GridPane.margin>
+      </Text>
+      <Label layoutX="461.0" layoutY="445.0" text="Observaciones" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Label layoutX="38.0" layoutY="404.0" prefHeight="16.0" prefWidth="142.0" text="Ingredientes" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <TextArea fx:id="ingred" layoutX="125.0" layoutY="375.0" prefHeight="117.0" prefWidth="233.0" wrapText="true" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextArea>
+      <Label layoutX="467.0" layoutY="241.0" prefHeight="16.0" prefWidth="287.0" text="Forma de preparacion:" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <TextArea fx:id="fprep" layoutX="454.0" layoutY="267.0" prefHeight="156.0" prefWidth="357.0" wrapText="true" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="5" GridPane.rowSpan="2">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextArea>
+      <TextArea fx:id="obser" layoutX="576.0" layoutY="430.0" prefHeight="110.0" prefWidth="234.0" wrapText="true" />
+   </children>
+</AnchorPane>

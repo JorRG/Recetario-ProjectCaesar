@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: burlywood;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.controller">
+   <children>
+      <Button fx:id="butanyadir" focusTraversable="false" layoutX="35.0" layoutY="550.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" text="Añadir Receta" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="635.0" AnchorPane.topAnchor="550.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Plus__Orange.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ListView fx:id="lista" editable="true" layoutY="103.0" prefHeight="447.0" prefWidth="300.0" style="-fx-background-color: bisque;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="102.0" />
+      <HBox layoutX="34.0" layoutY="36.0" prefHeight="53.0" prefWidth="230.0" spacing="30.0" AnchorPane.bottomAnchor="511.0" AnchorPane.topAnchor="36.0">
+         <children>
+            <Button fx:id="buteditar" focusTraversable="false" layoutX="28.0" layoutY="46.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Editar">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@1427839917_pencil-128.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font></Button>
+            <Button fx:id="butborrar" focusTraversable="false" layoutX="192.0" layoutY="46.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Borrar">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@1427840148_human-user-trash.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <ImageView fitHeight="499.0" fitWidth="602.0" layoutX="300.0" layoutY="105.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0">
+         <image>
+            <Image url="@recipe_book.gif" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="311.0" layoutY="29.0" prefHeight="70.0" prefWidth="599.0" text="Recetario" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="501.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="menuarchivo" layoutX="1.0" layoutY="12.0" prefHeight="29.0" prefWidth="905.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu text="_Archivo">
+            <items>
+                  <MenuItem fx:id="menuguardar" onAction="#handleOpen" text="Abrir">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="menuguardar" mnemonicParsing="false" onAction="#guardar" text="Guardar">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="menuguardarcomo" mnemonicParsing="false" onAction="#guardarComo" text="Guardar Como...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator></MenuItem>
+              <MenuItem fx:id="menusalir" mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TitledPane fx:id="mostrarReceta" animated="false" layoutX="300.0" layoutY="101.0" prefHeight="499.0" prefWidth="602.0" style="-fx-background-color: antiquewhite;" text="Plato" visible="false">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: antiquewhite;" visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="100.0" top="100.0" />
+               </padding>
+               <children>
+                  <ImageView fx:id="imgReceta" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="-90.0" />
+                  <TextArea fx:id="textobservaciones" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: lightsteelblue;" visible="false" wrapText="true" AnchorPane.leftAnchor="40.0" />
+                  <Group layoutX="-56.0">
+                     <children>
+                        <VBox layoutX="361.0" layoutY="37.0" prefHeight="108.0" prefWidth="86.0" spacing="30.0">
+                           <children>
+                              <Label fx:id="categoriaReceta" layoutX="361.0" layoutY="37.0" text="Categoria" />
+                              <Label fx:id="comensalesReceta" layoutX="380.0" layoutY="81.0" text="Comensales" />
+                              <Label fx:id="dificultadReceta" layoutX="362.0" layoutY="123.0" text="Dificultad" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="280.0" layoutY="37.0" prefHeight="108.0" prefWidth="84.0" spacing="30.0">
+                           <children>
+                              <Label layoutX="286.0" layoutY="37.0" text="Categoria:" />
+                              <Label layoutX="280.0" layoutY="81.0" prefHeight="16.0" prefWidth="86.0" text="Comensales:" />
+                              <Label layoutX="287.0" layoutY="123.0" text="Dificultad:" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </Group>
+                  <Group layoutX="19.0">
+                     <children>
+                        <VBox layoutX="380.0" layoutY="37.0" prefHeight="108.0" prefWidth="130.0" spacing="30.0">
+                           <children>
+                              <Label layoutX="380.0" layoutY="37.0" text="Tiempo Preparación:" />
+                              <Label layoutX="391.0" layoutY="81.0" text="Tiempo Cocción:" />
+                              <Label layoutX="405.0" layoutY="123.0" text="Valoración:" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="505.0" layoutY="37.0" prefHeight="109.0" prefWidth="56.0" spacing="30.0">
+                           <children>
+                              <Label fx:id="tprepReceta" layoutX="505.0" layoutY="37.0" text="TPrep" />
+                              <Label fx:id="tcocReceta" layoutX="507.0" layoutY="81.0" text="TCoc" />
+                              <Label fx:id="valoracionReceta" layoutX="512.0" layoutY="123.0" text="Val" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </Group>
+                  <TextArea fx:id="ingredientesReceta" editable="false" layoutX="25.0" layoutY="188.0" prefHeight="250.0" prefWidth="180.0" wrapText="true" />
+                  <TextArea fx:id="fprepReceta" layoutX="224.0" layoutY="188.0" prefHeight="250.0" prefWidth="363.0" wrapText="true" />
+                  <Label layoutX="25.0" layoutY="171.0" text="Ingredientes" />
+                  <Label layoutX="224.0" layoutY="171.0" text="Preparación" />
+               </children>
+            </AnchorPane>
+        </content>
+         <graphic>
+            <Button fx:id="butobservaciones" mnemonicParsing="false" style="-fx-background-color: coral;" text="Observaciones" />
+         </graphic>
+      </TitledPane>
+   </children>
+</AnchorPane>

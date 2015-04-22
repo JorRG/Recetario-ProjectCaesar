@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<recetas>
+    <Receta>
+        <imagen>/Users/jorrogi/Documents/workspace/ProjectCaesar/src/archivos/paella.jpg</imagen>
+        <categoria>Arroces</categoria>
+        <comensales>4</comensales>
+        <dificultad>Media</dificultad>
+        <tiempopreparacion>90.0</tiempopreparacion>
+        <tiempococcion>60.0</tiempococcion>
+        <valoracion>5</valoracion>
+        <ingredientes>Pollo (700 grs. Unos 8 o 10 trozos medianos)
+
+Conejo (300 grs. Unos 4 o 6 trozos medianos.)
+
+Una cucharada sopera( no muy colmada) de pimentón rojo dulce molido .
+
+Hebras de azafrán al gusto o en su lugar una cucharadita de café de colorante alimentario
+
+12 cucharadas soperas de tomate natural rallado
+
+Ferraura, rotjet o judía verde ancha (400 grs.).
+
+Garrofón (100 grs.)
+
+3 o 4 alcachofas
+
+Judía blanca o tabella (100 grs.).
+
+Agua
+
+Aceite de oliva virgen (15 cl. o 150 grs.)
+
+Arroz (320 grs.)
+
+Sal
+
+</ingredientes>
+        <formapreparacion>Vertemos el aceite en el centro de la paella, la nivelamos, encendemos el fuego y calentamos el aceite.
+
+Cuando el aceite comienza a humear, incorporamos el pollo y el conejo troceados y ligeramente salados, dorándolos cuidadosamente a fuego medio. Si el fuego es excesivo, podemos espolvorear un poco de sal en el borde de la paella, en aquellas zonas en las que no hay aceite, para evitar que se queme.
+
+Es muy importante que toda la carne esté muy dorada, el éxito de la paella depende mucho de esta etapa de la elaboración
+
+Añadimos la verdura troceada y la rehogamos unos minutos
+
+Hacemos un hueco en el centro de la paella apartando la carne y la verdura, en este hueco incorporamos el  tomate, lo sofreímos unos minutos y añadimos el pimentón. Dejamos rehogar un minuto más. Es importante que el fuego sea suave en el momento de poner el pimentón, ya que corremos el riesgo de que se queme y la paella resulte amarga.
+
+Es el momento de verter agua hasta casi el borde, tal y como se puede apreciar en la fotografía de la izquierda
+
+Añadimos algo de sal y la dejamos cocer unos 20 minutos, añadiendo más agua si fuera necesario.
+
+ Transcurridos los 20 minutos, hemos de procurar que el caldo de la paella llegue justo hasta la mitad de los remaches de las asas, al y como indican las flechas de la fotografía. Seguidamente probamos de sal, el caldo deberá estar muy sabroso, ligeramente salado, ya que el arroz, durante la cocción, absorberá parte de la sal. Es una buena idea dar a probar el caldo a alguno de los invitados, si finalmente la paella sale sosa o salada podremos culpar al incauto que la cató.
+
+Este es el momento de incorporar el arroz. Si hemos tomado correctamente la  referencia de los remaches de las asas, simplemente  haciendo un surco con el arroz que sobresalga un par de centímetros sobre el caldo, habremos conseguido la relación perfecta de arroz y caldo para el recipiente en el que estamos cocinando, esa es la medida exacta del arroz que necesita la paella, si deseamos añadir más arroz, deberemos subir el nivel del caldo agregando agua. Pero ya estaremos forzando la relación liquido-arroz para esa paella, lo ideal sería utilizar una paella de mayor diámetro. Todas estas referencias son aproximadas,  la potencia del fuego, la variedad de arroz e incluso la altitud modifican en mayor o menor medida las proporciones liquido-arroz que debemos utilizar para cada recipiente. No obstante, espero que sirva esta pequeña explicación como ayuda para las personas más inexpertas.</formapreparacion>
+        <observaciones>Cuidado con las medidas de arroz y agua, siempre debe haber el doble de agua que de arroz. Estupenda paella. ¡A disfrutar!</observaciones>
+        <nombre>Paella Valenciana</nombre>
+    </Receta>
+</recetas>
