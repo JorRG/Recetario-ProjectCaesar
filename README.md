@@ -7,3 +7,6 @@ It also allows to save the added recipes to an XML file and open files created b
 Its interface and functionality has been developed using JavaFX
 
 
+To start the application:
+  
+  java -jar Project Caesar.jar
