@@ -8,7 +8,7 @@ Aplicacion de recetas que permite al usuario añadir, editar y eliminar todas la
 También permite guardar las recetas añadidas a un archivo XML y abrir las creadas anteriormente, cargando las recetas contenidas en él. 
 
 
-![Screenshot](http://imgur.com/1q6DJKc,eQvaM30#1 "Vista de visualización de la receta")
+![Screenshot](http://i.imgur.com/eQvaM30.png "Vista de visualización de la receta")
 
 Su interfaz y funcionalidad, han sido desarrolladas en JavaFX
 
