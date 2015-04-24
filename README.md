@@ -18,3 +18,6 @@ Requisitos mínimos: Java Version 8 Update 40
 Para arrancar la aplicación:
   
       java -jar Project Caesar.jar
+
+
+Creado por: Jorge Ros Gil y Claudio Fernández Antón
