@@ -1,12 +1,20 @@
 # Recetario-ProjectCaesar
 
-Recipe application which allows the user to add, edit and remove as many recipes as wanted. Various information can be
-contained in the added recipes, such as its name, an image, ingredients, etc. 
-
-It also allows to save the added recipes to an XML file and open files created before. 
-Its interface and functionality has been developed using JavaFX
+Aplicacion de recetas que permite al usuario añadir, editar y eliminar todas las recetas que desee. Diversa información puede ser añadida a la receta, como por ejemplo el nombre, una imagen, ingredientes utilizados, etc.
 
 
-To start the application:
+
+![Screenshot](http://i.imgur.com/1q6DJKc.png "Vista Principal del recetario")
+También permite guardar las recetas añadidas a un archivo XML y abrir las creadas anteriormente, cargando las recetas contenidas en él. 
+
+
+![Screenshot](http://i.imgur.com/1q6DJKc.png "Vista de visualización de la receta")
+
+Su interfaz y funcionalidad, han sido desarrolladas en JavaFX
+
+Requisitos mínimos: Java Version 8 Update 40
+
+
+Para arrancar la aplicación:
   
       java -jar Project Caesar.jar
